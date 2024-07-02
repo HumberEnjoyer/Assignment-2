@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Ventures</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+    <a href="#home"><img src="logo.png" class="logo"></a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+        <h1>For climbers of every level, from <span class="highlight-blue">beginners</span> to <em class="highlight-green">experts</em></h1>
+        <button class="button">Join Us</button>
+    </section>
+
+    <section class="icons-section">
+        <div class="container">
+          <div class="grid">
+            <div>
+              <img src="welcome-icon.svg" alt="A welcoming & intimidation free place">
+              <p>A welcoming & intimidation free place</p>
+            </div>
+            <div>
+              <img src="harness-icon.svg" alt="Secured climbing for beginners where a harness holds you tight">
+              <p>Secured climbing for beginners where a harness holds you tight</p>
+            </div>
+            <div>
+              <img src="advanced-icon.svg" alt="Advanced climbing terrain just for experts">
+              <p>Advanced climbing terrain just for experts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>Vertical Ventures</h2>
+        <div class="about-container">
+          <div class="about-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThRdkyIkkpJqrPC0BiIaJny3E_fhMIO5Fygw&s" alt="About Us Image 1">
+            <p>At Vertical Ventures, we provide top-notch rock climbing facilities and training for all levels. Join our community of climbers and reach new heights!</p>
+          </div>
+          <div class="about-box">
+            <img src="https://www.gessato.com/wp-content/uploads/2012/02/excalibur-worldtallestclimbingwall-gselect-gessato-gblog-01-1.jpg" alt="About Us Image 2">
+            <p>Our state-of-the-art facilities and expert trainers ensure you have the best climbing experience. Whether you're a beginner or an expert, we have something for everyone!</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+          <div class="service-text">
+            <h3>Indoor Rock Climbing</h3>
+            <p>Experience the thrill of indoor rock climbing in our state-of-the-art facility. Whether you're a beginner or an experienced climber, we have routes that will challenge and excite you.</p>
+          </div>
+          <div class="service-image">
+            <img src="https://stories.walltopia.com/wp-content/uploads/2020/08/932C9781-B5A7-45B3-84EA-EC2DD17585CC-5440-000003DE0B31B0CB.jpeg" alt="Indoor Rock Climbing">
+          </div>
+        </div>
+        <div class="service reverse">
+          <div class="service-text">
+            <h3>Outdoor Expeditions</h3>
+            <p>Join us for exciting outdoor expeditions where you can climb natural rock formations. Our guided tours ensure safety and provide an unforgettable experience.</p>
+          </div>
+          <div class="service-image">
+            <img src="https://gripped.com/wp-content/uploads/2021/04/Bluffs.jpg" alt="Outdoor Expeditions">
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-text">
+            <h3>Climbing Gear Rentals</h3>
+            <p>We offer a wide range of climbing gear for rent, including shoes, harnesses, and helmets. All our equipment is regularly inspected and maintained to ensure your safety.</p>
+          </div>
+          <div class="service-image">
+            <img src="https://hubclimbing.com/markham/wp-content/uploads/2022/11/gear-shop-1100x734.jpg" alt="Climbing Gear Rentals">
+          </div>
+        </div>
+        <div class="service reverse">
+          <div class="service-text">
+            <h3>Professional Training</h3>
+            <p>Our professional trainers are here to help you improve your climbing skills. We offer personalized training sessions for climbers of all levels.</p>
+          </div>
+          <div class="service-image">
+            <img src="https://tcdn.storeden.com/gallery/5d64de7802e58e4cd47b23c6" alt="Professional Training">
+          </div>
+        </div>
+      </section>
+      
+</main>
+
+  <footer>
+    <p>&copy; 2024 Vertical Ventures.</p>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      const homeSection = document.getElementById('home');
+      const homeHeight = homeSection.offsetHeight;
+  
+      if (window.scrollY > homeHeight) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+  
+</body>
+</html>

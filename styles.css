@@ -1,0 +1,298 @@
+
+ /*header styling*/
+ header {
+    background-color: transparent;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /*ensure it stays on top*/
+    transition: background-color 0.3s ease
+  }
+  header.scrolled {
+    background-color: white; /*change to white when scrolled*/
+    color: black; /*change text color to black for contrast*/
+  }
+  header.scrolled nav ul li a {
+    color: black; /*change nav links color to black*/
+  }
+/*main styles*/
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+  }
+  main {
+    flex: 1;
+  }
+ 
+  h1, h2, h3, p {
+    margin: 0 0 1em 0;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1em;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  section {
+    padding: 2em;
+    text-align: center;
+  }
+  /*logo styling*/
+.logo {
+    height: 50px;
+    margin-right: 1em;
+    vertical-align: middle;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*home section */
+  #home {
+    background: url('https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/05/cliffhanger-sylvester-stallone-social-1.jpg') no-repeat center center/cover;
+    font-size: 200%;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /*text is centered*/
+    padding: 1em;
+    margin-top: -100px;
+    padding-top: 100px; 
+  }
+  /*highlight text*/
+.highlight-blue {
+    background-color: #31a9e0;
+    color: black;
+  }
+  
+  .highlight-green {
+    background-color:#add138;
+    color: black;
+  }
+  /*button*/
+  .button {
+    background-color: #F2DC28;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    animation: bounce 2s infinite;
+  }
+  /*button bounce*/
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  /*footer styles*/
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    position: relative;
+  }
+/*media queries*/
+/*small*/
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .button {
+      font-size: 1em;
+      padding: 0.5em 1em;
+    }
+  
+    section {
+      padding: 1em;
+    }
+  }
+  
+  /*smaller*/
+  @media (max-width: 480px) {
+    header {
+      font-size: 1em;
+    }
+  
+    nav ul li {
+      margin: 0.5em 0;
+    }
+  
+    section {
+      padding: 0.5em;
+    }
+  
+    .button {
+      font-size: 0.8em;
+      padding: 0.5em;
+    }
+  }
+
+/*icons section*/
+.icons-section {
+    padding: 2em 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .icons-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .icons-section .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+  }
+  
+  .icons-section .grid div {
+    flex: 1 1 200px;
+    max-width: 200px;
+    text-align: center;
+  }
+  
+  .icons-section img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .icons-section p {
+    margin-top: 1em;
+    font-size: 1em;
+    color: #333;
+  }
+  /*about section*/
+#about {
+    padding: 2em;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .about-box {
+    flex: 1 1 45%;
+    max-width: 45%;
+    text-align: center;
+  }
+  
+  .about-box img {
+    max-width: 500px;
+    height: 500px;
+    object-fit: cover; /*ensures the image scales to fit within the box while maintaining aspect ratio*/
+    border-radius: 10px;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease;
+  }
+  /*zoom in the image on hover*/
+  .about-box img:hover {
+    transform: scale(1.1); 
+  }
+  
+  .about-box p {
+    font-size: 1em;
+    color: #333;
+    max-width: 500px; /*ensure the text does not extend past the image width*/
+    margin: 0 auto; /*center the text*/
+  }
+  @media (max-width: 768px) {
+    .about-box {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Services Section */
+#services {
+    padding: 2em;
+    background-color:  rgb(230, 249, 255);
+    text-align: center;
+  }
+  
+  .service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  
+  .service-text {
+    flex: 1 1 45%;
+    max-width: 45%;
+    text-align: left;
+    padding: 1em;
+  }
+  
+  .service-image {
+    flex: 1 1 45%;
+  max-width: 45%;
+  padding: 1em;
+  }
+  
+  .service-image img {
+    max-width: 500px;
+    height: 500px;
+  }
+  
+  .service.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  @media (max-width: 768px) {
+    .service {
+      flex-direction: column;
+    }
+  
+    .service.reverse {
+      flex-direction: column;
+    }
+  
+    .service-text, .service-image {
+      max-width: 100%;
+      text-align: center;
+      padding: 0.5em;
+    }
+  }
+  
